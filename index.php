@@ -16,7 +16,7 @@ $event = json_decode($input, true);
 
 // Log the received event (for debugging)
 file_put_contents('webhook_log.txt', print_r($event, true), FILE_APPEND);
-error_log($event['content']['customer']['id']);
+print_r($event['content']['customer']['id']);
 //$event['content']['customer']['billing_address']['city'];
 // Handle the event
 if ($event) {
