@@ -1,7 +1,8 @@
+
 <?php
 // Your webhook signing key
 //$webhook_signing_key = 'test_h3n9EV55r09TBybNpDqP94B2EuzkTHky';
-
+echo "hello";
 // Set the response header to JSON
 header('Content-Type: application/json');
 
