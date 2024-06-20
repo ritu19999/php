@@ -25,7 +25,8 @@ echo json_encode([$customer_id]);
 if ($event) {
     switch ($event['event_type']) {
         case 'customer_changed':
-        error_log('customer chnaged');
+        //error_log('customer chnaged');
+        echo json_encode(['customer Changed']);
             // Handle subscription created event
             break;
         case 'invoice_generated':
