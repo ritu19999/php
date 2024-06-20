@@ -17,6 +17,7 @@ $event = json_decode($input, true);
 
 // Log the received event (for debugging)
 file_put_contents('webhook_log.txt', print_r($event, true), FILE_APPEND);
+print_r($event, true);
 $customer_id=$event['content']['customer']['billing_address']['city'];
 echo json_encode([$customer_id]);
 //$event['content']['customer']['billing_address']['city'];
