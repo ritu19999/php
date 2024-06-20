@@ -34,7 +34,7 @@ if ($event) {
             break;
         // Add more cases to handle other event types
         default:
-            // Handle other event types
+            echo "Webhook Tested";
             break;
     }
 }
